@@ -1,6 +1,7 @@
 A calculator app project made by me.
 
 <h1>ENGLISH VERSION</h1>
+
 First, do a git clone of this project:
 ```
 git clone https://github.com/queirozz8/Calculator-App.git
@@ -21,6 +22,7 @@ npm run build:css
 
 
 <h1>VERSÃO EM PT-BR</h1>
+
 Primeiro, faça um git clone desse projeto:
 ```
 git clone https://github.com/queirozz8/Calculator-App.git
