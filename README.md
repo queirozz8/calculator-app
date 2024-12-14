@@ -31,7 +31,7 @@ npm run build:css
 
 1. Primeiro, faça um git clone desse projeto:
 ```
-git clone https://github.com/queirozz8/Calculator-App.git
+git clone https://github.com/queirozz8/calculator-app.git
 ```
 2. Vá para o diretório do projeto:
 ```
