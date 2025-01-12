@@ -6,11 +6,11 @@ A calculator app project made by me.
 
 1. First, do a git clone of this project:
 ```
-git clone https://github.com/queirozz8/Calculator-App.git
+git clone https://github.com/queirozz8/calculator-app.git
 ```
 2. Go to the directory of the project:
 ```
-cd Calculator-App/
+cd calculator-app/
 ```
 3. Run this command to install all the dependencies (Tailwind CSS):
 ```
@@ -35,7 +35,7 @@ git clone https://github.com/queirozz8/calculator-app.git
 ```
 2. Vá para o diretório do projeto:
 ```
-cd Calculator-App/
+cd calculator-app/
 ```
 3. Rode esse comando para instalar todas as dependências (Tailwind CSS):
 ```
