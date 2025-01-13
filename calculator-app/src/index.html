@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body class="flex flex-col justify-center items-center w-screen h-screen bg-gray-900">
-    <h1 class="relative xl:top-20 text-5xl text-zinc-200">Calculadora</h1>
-    <main class="grid grid-rows-6 grid-cols-4 xl:w-96 xl:h-96 xl:mt-8 xl:p-5 box-content relative top-20 border border-zinc-600 bg-bgCalc rounded-3xl">
+<body class="flex flex-col justify-center items-center w-screen h-screen bg-gray-900 sm:overflow-x-hidden">
+    <h1 class="relative sm:mt-[420px] md:mt-72 lg:mt-36 xl:top-36 2xl:top-20 text-5xl text-zinc-200">Calculadora</h1>
+    <main class="grid grid-rows-6 grid-cols-4 w-96 h-96 md:mt-2 xl:mt-8 p-5 box-content relative lg:top-24 xl:top-32 2xl:top-20 border border-zinc-600 bg-bgCalc rounded-3xl">
         <button class="flex justify-center items-center flex-1 m-1 border border-zinc-700 rounded-lg text-2xl text-white bg-button1 hover:bg-button2 active:bg-buttonClick" data-key="%">%</button>
         
         <button class="flex justify-center items-center flex-1 m-1 border border-zinc-700 rounded-lg text-2xl text-white bg-button1 hover:bg-button2 active:bg-buttonClick" data-key="C">CE</button>
@@ -57,27 +57,26 @@
         <button class="flex justify-center items-center m-1 flex-1 border border-zinc-700 rounded-lg text-2xl text-white bg-button3 hover:bg-equalsButtonHover active:bg-buttonClick2" data-key="Enter">=</button>
     </main>
 
-    <h1 class="relative top-28 text-3xl text-zinc-200">Lista de Teclas</h1>
-    <footer>
-        <div class="flex flex-col items-center xl:mt-36">
-        <ul class="flex justify-center xl:gap-14 flex-wrap">
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">+</kbd> - Somar</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">-</kbd> - Subtrair</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">*</kbd> - Multiplicação</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">/</kbd> - Divisão</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">%</kbd> - Porcentagem (Número 1% de Número 2)</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">c</kbd> (Minúsuclo) - Clear All, apagar tudo</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">C</kbd> (Maiúsculo) - Cancel Entry, cancelar entrada atual</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">_</kbd> - Alterar sinal do número atual (Digite o número primeiro e mude depois o sinal)</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">.</kbd> - Decimal (Digite o número primeiro e adicione depois o ponto)</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">Enter</kbd> ou <kbd class="p-1 rounded-lg bg-zinc-500">=</kbd> - Resultado</li>
-            <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">Backspace</kbd> ou <kbd class="p-1 rounded-lg bg-zinc-500">Delete</kbd> - Apagar</li>
-        </ul>
+    <footer class="flex flex-col justify-center items-center gap-4 relative sm:top-16 lg:top-36 2xl:top-28">
+        <h1 class="2xl:relative 2xl:top-24 text-3xl text-zinc-200">Lista de Teclas</h1>
+        <div class="flex flex-col items-center 2xl:mt-36">
+            <ul class="flex justify-center sm:gap-8 lg:gap-9 xl:gap-16 flex-wrap">
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">+</kbd> - Somar</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">-</kbd> - Subtrair</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">*</kbd> - Multiplicação</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">/</kbd> - Divisão</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">%</kbd> - Porcentagem (Número 1% de Número 2)</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">c</kbd> (Minúsculo) - Clear All, apagar tudo</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">C</kbd> (Maiúsculo) - Cancel Entry, cancelar entrada atual</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">_</kbd> - Alterar sinal do número atual (Digite o número primeiro e mude depois o sinal)</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">.</kbd> - Decimal (Digite o número primeiro e adicione depois o ponto)</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">Enter</kbd> ou <kbd class="p-1 rounded-lg bg-zinc-500">=</kbd> - Resultado</li>
+                <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">Backspace</kbd> ou <kbd class="p-1 rounded-lg bg-zinc-500">Delete</kbd> - Apagar</li>
+            </ul>
 
-        <p class="text-sm md:text-base mt-16 text-zinc-300">(Você não precisa clicar no input para digitar o número, pode só começar à apertar as teclas do teclado, independente de onde você clique)</p>
+            <p class="text-sm md:text-base mt-16 text-zinc-300">(Você não precisa clicar no input para digitar o número, pode só começar à apertar as teclas do teclado, independente de onde você clique)</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
