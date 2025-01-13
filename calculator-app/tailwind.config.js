@@ -15,6 +15,13 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Work Sans', 'Arial', 'Segoe UI', 'system-ui', 'sans-serif']
+      },
+      screens: {
+        '2xl': '1440px',
+        'xl': '1336px',
+        'lg': '1280px',
+        'md': '1128px',
+        'sm': '800px',
       }
     },
   },
