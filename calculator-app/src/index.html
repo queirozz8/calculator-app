@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="flex flex-col justify-center items-center w-screen h-screen bg-gray-900">
-    <h1 class="relative top-20 text-5xl text-zinc-200">Calculadora</h1>
-    <main class="grid grid-rows-6 grid-cols-4 w-96 h-96 mt-8 p-5 box-content relative top-20 border border-zinc-600 bg-bgCalc rounded-3xl">
+    <h1 class="relative xl:top-20 text-5xl text-zinc-200">Calculadora</h1>
+    <main class="grid grid-rows-6 grid-cols-4 xl:w-96 xl:h-96 xl:mt-8 xl:p-5 box-content relative top-20 border border-zinc-600 bg-bgCalc rounded-3xl">
         <button class="flex justify-center items-center flex-1 m-1 border border-zinc-700 rounded-lg text-2xl text-white bg-button1 hover:bg-button2 active:bg-buttonClick" data-key="%">%</button>
         
         <button class="flex justify-center items-center flex-1 m-1 border border-zinc-700 rounded-lg text-2xl text-white bg-button1 hover:bg-button2 active:bg-buttonClick" data-key="C">CE</button>
@@ -59,8 +59,8 @@
 
     <h1 class="relative top-28 text-3xl text-zinc-200">Lista de Teclas</h1>
     <footer>
-        <div class="flex flex-col items-center mt-36">
-        <ul class="flex justify-center gap-14 flex-wrap">
+        <div class="flex flex-col items-center xl:mt-36">
+        <ul class="flex justify-center xl:gap-14 flex-wrap">
             <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">+</kbd> - Somar</li>
             <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">-</kbd> - Subtrair</li>
             <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">*</kbd> - Multiplicação</li>
@@ -74,7 +74,7 @@
             <li class="text-zinc-100"><kbd class="p-1 rounded-lg bg-zinc-500">Backspace</kbd> ou <kbd class="p-1 rounded-lg bg-zinc-500">Delete</kbd> - Apagar</li>
         </ul>
 
-        <p class="mt-16 text-zinc-300">(Você não precisa clicar no input para digitar o número, pode só começar à apertar as teclas do teclado, independente de onde você clique)</p>
+        <p class="text-sm md:text-base mt-16 text-zinc-300">(Você não precisa clicar no input para digitar o número, pode só começar à apertar as teclas do teclado, independente de onde você clique)</p>
         </div>
     </footer>
 
